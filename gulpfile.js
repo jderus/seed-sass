@@ -16,3 +16,7 @@ gulp.task('clean'   , getFileTask('clean', del));
 gulp.task('sass'    , getFileTask('sass'));
 gulp.task('sassdoc' , getFileTask('sassdoc', sassdoc));
 
+// Gulp Dependent FileTasks ------------------------------------------------------------------------------------
+// slight bug here with timing of sassdoc. ---------------------------------------------------------------------
+gulp.task('sassdocreport', ['sassdoc'], getFileTask('open', config.paths.sassdocDest + "index.html" ));
+
