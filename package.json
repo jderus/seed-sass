@@ -1,0 +1,26 @@
+{
+  "name": "seed-sass",
+  "version": "0.0.1",
+  "description": "Seed repo for 7-1 sass with barrels",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jderus/seed-sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jderus/seed-sass/issues"
+  },
+  "homepage": "https://github.com/jderus/seed-sass#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-util": "^3.0.7",
+    "sassdoc": "^2.1.20"
+  }
+}
