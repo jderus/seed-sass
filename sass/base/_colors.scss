@@ -1,0 +1,24 @@
+////
+/// @group base.colors
+/// @author jderus
+////
+
+// -----------------------------------------------------------------------------
+// This file contains the color palette
+// -----------------------------------------------------------------------------
+
+/// get a color from the palette
+/// @param {string} $color - the color to select.
+/// @param {string} $tone ['base'] - the variation tone of the color.
+@function palette($color, $tone: 'base') {
+    @return map-get(map-get($palettes, $color), $tone);
+}
+
+/// define the color palette
+$palettes : (
+    grayscale: (
+        base : #333333,
+        light: #666666,
+        dark : #000000
+    )
+);

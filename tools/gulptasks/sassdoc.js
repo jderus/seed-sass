@@ -3,8 +3,8 @@ module.exports = function (gulp, config, plugins, sassdoc) {
         console.log(plugins.util.colors.blue("// Gulp: Sassdoc  ------------------------------------------------------------------------------------------>"));
         
         var sassdocOptions = {
-            dest: config.paths.sassdocDest,
-            theme: 'neat'
+            dest: config.paths.sassdocDest
+            // theme: 'neat'
         };
 
         var stream = sassdoc(sassdocOptions);
